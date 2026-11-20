@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Konsultasi - Pusat Edukasi Kolera</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <button class="menu-btn" id="menuBtn" aria-label="Buka Menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <a href="index.html" class="brand-title">Pusat Edukasi Kolera</a>
+    </header>
+
+    <nav class="nav-drawer" id="navDrawer">
+        <ul class="nav-list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="profil.html">Profil</a></li>
+            <li><a href="gejala.html">Gejala</a></li>
+            <li><a href="penyebab.html">Penyebab</a></li>
+            <li><a href="pencegahan.html">Pencegahan</a></li>
+            <li><a href="penanganan.html">Penanganan</a></li>
+            <li><a href="konsultasi.html" class="active">Konsultasi</a></li>
+            <li><a href="kontak.html">Kontak</a></li>
+        </ul>
+    </nav>
+
+    <main class="container">
+        <div class="card">
+            <h1>Formulir Konsultasi & Informasi</h1>
+            <p>
+                Memiliki pertanyaan seputar pencegahan kolera, sanitasi air, atau gejala gangguan pencernaan? 
+                Silakan isi formulir di bawah ini untuk terhubung dengan layanan edukasi kami.
+            </p>
+
+            <form id="formKonsultasi" novalidate>
+                <div class="form-group">
+                    <label for="nama">Nama Lengkap *</label>
+                    <input type="text" id="nama" name="nama" placeholder="Masukkan nama lengkap">
+                    <div class="error-msg" id="errNama"></div>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Alamat Email *</label>
+                    <input type="email" id="email" name="email" placeholder="contoh@email.com">
+                    <div class="error-msg" id="errEmail"></div>
+                </div>
+
+                <div class="form-group">
+                    <label for="telepon">Nomor Telepon / WhatsApp *</label>
+                    <input type="tel" id="telepon" name="telepon" placeholder="Contoh: 08123XXXXXX">
+                    <div class="error-msg" id="errTelepon"></div>
+                </div>
+
+                <div class="form-group">
+                    <label for="pesan">Pesan atau Pertanyaan Konsultasi *</label>
+                    <textarea id="pesan" name="pesan" rows="4" placeholder="Tuliskan pertanyaan atau keluhan Anda secara jelas..."></textarea>
+                    <div class="error-msg" id="errPesan"></div>
+                </div>
+
+                <button type="submit" class="btn-primary">Kirim Konsultasi</button>
+            </form>
+
+            <div class="success-banner" id="successBanner"></div>
+        </div>
+    </main>
+
+    <footer>
+        &copy; 2026 - [Calista N] - [250205012] - D3 RMIK
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
